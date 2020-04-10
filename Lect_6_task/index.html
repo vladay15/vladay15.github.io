@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="frame"></div>
+    </div>
+    <div class="block">
+        <div class="target_first"></div>
+        <div class="target_second"></div>
+    </div>
+    <div class="btn_row">
+        <div class="play-pause">
+            <p>Checkbox</p>
+            <input type="checkbox" value="" id="playPauseCheckbox" class="check" name="playPauseCheckbox" />
+            <label for="playPauseCheckbox"></label>
+        </div>  
+        <div class="btn_js">
+        	<p>Button JS</p>
+        	<button class="btn"></button>
+        </div>
+    </div>
+<script>
+addEventListener('click',()=>{
+    let btn = document.querySelector('.btn');
+    btn.classList.toggle("paused");
+    return false;
+});
+</script>
+</body>
+</html>
