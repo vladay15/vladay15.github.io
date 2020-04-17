@@ -1,17 +1,20 @@
 @media(max-width:1420px){
     .main_works{
         height: 150vh;
-    }    
+    }  
+    .container_works{
+        top: 10%;
+    }  
 }
 @media(max-width:1000px){
     .main_works{
         height: 180vh;
     }    
     .container_works{
-        top: 5%;
+        top: 7%;
     }
     .container_scills{
-        left: 20%;
+        left: 25%;
     }
 }
 @media(max-width:650px){

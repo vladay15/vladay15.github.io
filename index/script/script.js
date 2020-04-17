@@ -41,7 +41,7 @@ document.addEventListener("scroll", ()=> {
     let left = 0 + 'px'; 
     let css = document.querySelector('#css');
     let javascript = document.querySelector('#javascript');
-    if(a>=1570){
+    if(a>=1510){
         photoshop.style.left = left;
         photoshop.style.opacity = 1;
         html.style.left = left;
@@ -50,8 +50,6 @@ document.addEventListener("scroll", ()=> {
         css.style.opacity = 1;
         javascript.style.left = left;
         javascript.style.opacity = 1;
-    }
-    if(a>=1570){
         photoshop.classList.add('photoshop');
         html.classList.add('html');
         css.classList.add('css');
@@ -62,3 +60,47 @@ document.addEventListener("scroll", ()=> {
         container_works.style.opacity = 1;
     }
 });
+
+const mq = window.matchMedia( "(min-width: 1000px)" );
+if (mq.matches) {
+    document.addEventListener("scroll", ()=> {
+        let block = document.getElementById("main_menu");
+        if (pageYOffset > 640) {
+            block.classList.add("db");
+            block.classList.remove("db__one");
+        } else {
+            block.classList.remove("db");
+            block.classList.add("db__one");
+        }
+    });
+}
+const md = window.matchMedia( "(max-width: 400px)" );
+if (md.matches) {
+    document.addEventListener("scroll", ()=> {
+        let a = pageYOffset;
+        console.log(a);
+        let photoshop = document.querySelector('#photoshop');
+        let html = document.querySelector('#html');
+        let left = 0 + 'px'; 
+        let css = document.querySelector('#css');
+        let javascript = document.querySelector('#javascript');
+        let container_works = document.querySelector('.container_works');
+        if(a>=420){
+            photoshop.style.left = left;
+            photoshop.style.opacity = 1;
+            html.style.left = left;
+            html.style.opacity = 1;
+            css.style.left = left;
+            css.style.opacity = 1;
+            javascript.style.left = left;
+            javascript.style.opacity = 1;
+            photoshop.classList.add('photoshop');
+            html.classList.add('html');
+            css.classList.add('css');
+            javascript.classList.add('javascript');
+        }
+        if(a>=1430){
+            container_works.style.opacity = 1;
+        }
+    });
+}
