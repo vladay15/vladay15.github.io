@@ -5,6 +5,9 @@
     .container_works{
         top: 10%;
     }  
+    .main_skills{
+        height: 110vh;
+    }
 }
 @media(max-width:1000px){
     .main_works{
@@ -15,6 +18,9 @@
     }
     .container_scills{
         left: 25%;
+    }
+    .main_skills{
+        height: 110vh;
     }
 }
 @media(max-width:650px){
@@ -31,6 +37,9 @@
         left: 8%;
         position: absolute;  
     }
+    .main_skills{
+        height: 110vh;
+    }
 }
 @media(max-width:400px){
     .main_text_home{
@@ -44,6 +53,9 @@
         width: 300px;
         background-color: #00adb5;
         transition: 0.3s ease-in-out;
+    }
+    .main_skills{
+        height: 110vh;
     }
     @keyframes photoshop{
         0%{

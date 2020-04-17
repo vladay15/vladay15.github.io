@@ -1,14 +1,14 @@
-document.addEventListener("scroll", ()=> {
-    let block = document.getElementById("main_menu");
-    // this.console.log(pageYOffset);
-    if (pageYOffset > 720) {
-        block.classList.add("db");
-        block.classList.remove("db__one");
-    } else {
-        block.classList.remove("db");
-        block.classList.add("db__one");
-    }
-});
+// document.addEventListener("scroll", ()=> {
+//     let block = document.getElementById("main_menu");
+//     // this.console.log(pageYOffset);
+//     if (pageYOffset > 720) {
+//         block.classList.add("db");
+//         block.classList.remove("db__one");
+//     } else {
+//         block.classList.remove("db");
+//         block.classList.add("db__one");
+//     }
+// });
 document.oncontextmenu =
     ()=> {
         return false;

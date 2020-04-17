@@ -19,6 +19,8 @@
     /*Home*/
     .main_home{
         height: 100vh;
+        position: relative;
+        z-index: 11;
     }
     .background_home{
         background-image: url('img/start_home.jpg');
@@ -399,7 +401,7 @@
     /*Animation menu*/
     .main_menu {
         display: none;
-        position: fixed;
+        position: sticky;
         left: 0;
         top: 0;
         width: 100%;
@@ -563,7 +565,7 @@
     .container_works>ul{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(320px,300px)); 
-        grid-gap: 50px;  
+        grid-gap: 10px;  
         justify-content: center;
         margin-left: 5%;
     }
