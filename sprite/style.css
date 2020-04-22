@@ -1,0 +1,37 @@
+body{
+    background: linear-gradient(#e66465, #9198e5);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.block{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    display: inline-block;
+    width: 64px; 
+    height: 64px;
+    transition: 0.2s ease-in-out;
+}
+a:hover{
+    filter: invert(1);
+}
+.instagram {
+    background: url('css_sprites.png') -10px -94px;
+}
+.facebook { 
+    background: url('css_sprites.png') -10px -10px;
+}
+.github { 
+    background: url('css_sprites.png') -94px -10px; }
+.soundcloud { 
+    background: url('css_sprites.png') -94px -94px;
+}
+.telegram{
+    background: url('css_sprites.png') -178px -10px;
+}
