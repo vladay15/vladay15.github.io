@@ -1,0 +1,92 @@
+@import "nullstyle.css";
+
+body{
+    background-color:#4e6379;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.container { 
+    width: 602px;
+    height: 157px;
+    box-shadow: 0 5px 50px #323f4d;
+    background-color: #fff;
+    margin:100px auto 0;
+    border-radius: 5px;
+}
+.container_row {
+    display: flex;
+ }
+ 
+ /*IMG*/
+ 
+ .img_virtual_host { 
+    width: 44px; 
+    height: 44px;
+    background: url('css_sprites.png') -91px -10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+ }
+ .img_cloud_host { 
+    width: 61px;
+    height: 44px;
+    background: url('css_sprites.png') -10px -10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+ }
+ .img_server{
+    width: 43px; 
+    height: 42px;
+    background: url('css_sprites.png') -10px -74px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+ }
+ 
+ /*/IMG*/
+
+ .virtual_host { 
+     text-align: center;
+     margin: 10px 25px;
+     width: 150px;
+     height: 135px;
+ }
+.text_host { 
+    display: inline-block;
+    font-size: 14px;
+    color: #f77b3e;
+    font-weight: 600;
+    margin-bottom:15px;
+}
+.price_host { 
+    display: inline-block;
+    margin-bottom: 13px;
+    color: #17375f;
+    font-size: 12px;
+    width: 100px;
+}
+.btn_order { 
+    display: inline-block;
+    width: 73px;
+    height: 24px;
+    color: #fff;
+    background-color: #f56332;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+.cloud_host {
+    margin: 10px 25px;
+    width: 150px;
+    height: 135px;
+    text-align: center;
+ }
+.server { 
+    text-align: center;
+    margin: 10px 25px;
+    width: 150px;
+    height: 135px;
+}
+.line{
+    display: inline-block;
+    margin: 10px 0;
+    width: 1px;
+    height: 140px;
+    background-color: #d9d9d9;
+}

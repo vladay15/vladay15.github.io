@@ -1,0 +1,267 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Header */
+header{
+    background-image: url(../img/bg-01.jpg);
+    background-position-y: -250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1550px;
+    height: 500px;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 10;
+}
+.menu{
+    display: flex;    
+    height: 50px;
+    margin-left: 215px;
+}
+.menu li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu li:hover{
+    background-color: #ba1b34;
+}
+.container_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+h1{
+    font-size: 80px;
+    font-family: 'Metal Mania', cursive;
+    color: #fff;
+    position: relative;
+    top:150px;
+    text-align: center;
+}
+.button_header{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    vertical-align: middle;
+    width: 285px;
+    background: linear-gradient(135deg, #e0150e 0%,#ff3670 100%);
+    position: relative;
+    top: 250px;
+    padding: 15px;
+}
+.button_header:hover{
+    background: linear-gradient(135deg, #ff3670 0%,#e0150e 100%);
+}
+/* Tour */
+.wrap{
+    background-image: url(../img/bg.png);
+    background-color: #383838;
+    height: 1100px;
+}
+.tour > .container{
+    display: flex;
+    justify-content: center;
+}
+.tour > h2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    left: -10px;
+}
+
+.tour-card{
+    margin: 100px 20px 0 0;
+    background-size: cover;
+    width: 190px;
+    height: 215px;
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.tour-town,.tour-place,.tour-date,.button{
+    position: relative;
+    left: 10px;
+}
+.tour-place{
+    padding: 13px 0;
+    font-size: 12px;
+}
+.tour-date{
+    font-size: 12px;
+    font-style: italic;
+}
+.tour-town{
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.button{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 0 0 5px;
+    width: 145px;
+    font-size: 14px;
+    background: linear-gradient(135deg, #e0150e 0%,#ff3670 100%);
+}
+.button:hover{
+    background: linear-gradient(135deg, #ff3670 0%,#e0150e 100%);
+}
+
+.tour-card::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    width: 190px;
+    height: 215px;
+    background-color: rgba(0,0,0,0.5);
+}
+.madrid{
+    background-image: url(../img/tour/madrid.jpg);
+}
+.turin{
+    background-image: url(../img/tour/turin.jpg);
+}
+.hamburg{
+    background-image: url(../img/tour/hamburg.jpg);
+}
+.krakow{
+    background-image: url(../img/tour/krakow.jpg);
+}
+/* Gallery */
+.gallery{
+    position: relative;
+    top: 120px;
+}
+.gallery>.container>h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    color: #fff;
+    top: -60px;
+}
+.gallery>.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.photo > a > img{
+    width: 260px;
+    height: 260px;
+    margin: 15px 20px 0 -0;
+}
+
+/* Subscribe */
+
+.subscribe{
+    background-image: url(../img/bg-02.jpg);
+    background-position-y: -340px;
+    background-position: center;
+    background-size: cover;
+    height: 290px;
+    color: #fff;
+}
+.subscribe:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 290px;
+    background-color: rgba(0,0,0,0.5);
+}
+.subscribe>.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 75px;
+}
+.pitch>h2{
+   text-align: center;
+   font-size: 26px;
+   text-transform: uppercase;
+   margin-bottom: 45px;
+}
+.pitch>p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+input{
+    width: 290px;
+    height: 39px;
+    padding: 10px;
+    border: none;
+}
+button{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    width: 125px;
+    height: 42px;
+    position: relative;
+    top: 1px;
+    border: none;
+    background: linear-gradient(135deg, #e0150e 0%,#ff3670 100%);
+}
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff3670 0%,#e0150e 100%);
+}
+
+/* Footer */
+
+footer{
+    height: 120px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer .social .fa{
+    margin-top: 28px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+}
+footer .social .fa:hover{
+    color: rgb(177, 126, 126);
+}
+.copyright{
+    color: #fff;
+    font-size: 12px;
+}
