@@ -592,3 +592,6 @@
         background-color: rgb(0,0,0,0.2);
         transform: scale(1.02);
     }
+    .doc_ua>img{
+        background-size: contain;
+    }
