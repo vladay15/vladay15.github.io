@@ -1,0 +1,19 @@
+ 	h1{
+            text-transform: uppercase;
+            font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+            font-weight: normal;
+            text-align: center;
+        }
+        h1::before,h1::after {
+            content: "";
+            background-color: #000;
+            display: inline-block;
+            width: 45vw;
+            height: 5px;
+            vertical-align: middle;
+        }
+        h1::before{
+            margin-right: 5px;
+        }
+        h1::after{
+            margin-left: 5px;
