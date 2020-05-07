@@ -1,14 +1,6 @@
-// document.addEventListener("scroll", ()=> {
-//     let block = document.getElementById("main_menu");
-//     // this.console.log(pageYOffset);
-//     if (pageYOffset > 720) {
-//         block.classList.add("db");
-//         block.classList.remove("db__one");
-//     } else {
-//         block.classList.remove("db");
-//         block.classList.add("db__one");
-//     }
-// });
+window.onbeforeunload = function() {
+    return false;
+  };
 document.oncontextmenu =
     ()=> {
         return false;
@@ -55,9 +47,8 @@ document.addEventListener("scroll", ()=> {
         css.classList.add('css');
         javascript.classList.add('javascript');
     }
-    let container_works = document.querySelector('.container_works');
     if(a>=2210){
-        container_works.style.opacity = 1;
+        works_info.style.opacity = 1;
     }
 });
 
@@ -99,8 +90,10 @@ if (md.matches) {
             css.classList.add('css');
             javascript.classList.add('javascript');
         }
-        if(a>=1430){
-            container_works.style.opacity = 1;
-        }
     });
 }
+let btn_info = document.querySelector("#btn_info");
+let works_info = document.querySelector(".works_info");
+btn_info.addEventListener('click',() =>{
+    works_info.style.display = 'none';
+});
