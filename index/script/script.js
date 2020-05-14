@@ -1,6 +1,3 @@
-window.onbeforeunload = function() {
-    return false;
-  };
 document.oncontextmenu =
     ()=> {
         return false;
