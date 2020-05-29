@@ -137,9 +137,6 @@ h2{
     font-size: 22px;
     margin-top: 5px;
 }
-.post>img{
-    margin: 0 auto;
-}
 .date{
     margin-bottom: 5px;
     margin-top: 5px;
@@ -233,18 +230,16 @@ footer>.container>nav>ul>li>a{
     .blog>.container{
         position: relative;
         width: 930px;
-        margin-left: -100px;
-
     }
     .blog>.container>.post>h3{
         position: relative;
-        left: -80px;
+        left: 30px;
         top: -85px;
     }
     .blog>.container>.post>p{
         position: relative;
         width: 620px;
-        left: 418px;
+        left: 310px;
         top: -170px;
     }
     .date{
