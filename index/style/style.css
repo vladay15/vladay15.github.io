@@ -552,7 +552,7 @@
     }
     .main_works{
         position: relative;
-        height: 1000px;
+        height: 1300px;
         background-color: #e4f9f5;
         display: flex;
         justify-content: center;
@@ -592,7 +592,20 @@
         position: relative;
         z-index: 1;
     }
+    .block_works_kkr{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 0, 0);
+        transition: 0.5s ease-in-out;
+        position: relative;
+        z-index: 1;
+    }
     .container_works .item:hover + .block_works{
+        transform: rotate(180deg);
+        box-shadow: 0 0 10px black;
+        border-radius:10%;
+    }
+    .container_works .item:hover + .block_works_kkr{
         transform: rotate(180deg);
         box-shadow: 0 0 10px black;
         border-radius:10%;
@@ -606,6 +619,9 @@
     }
     .container_works .pract{
         color: rgb(0, 255, 0);
+    }
+    .container_works .kkr{
+        font-size: 42px;
     }
     .works_info{
         position: absolute;
